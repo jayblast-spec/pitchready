@@ -1,6 +1,6 @@
 # PitchReady
 
-PitchReady is part of Joy Ogunleye's Creator / Founder Tools.
+PitchReady is part of ArkNet Digital's Creator / Founder Tools.
 
 ## Promise
 
