@@ -1,37 +1,38 @@
 # PitchReady
 
-PitchReady is part of ArkNet Digital's Creator / Founder Tools.
+PitchReady is an ArkNet Digital product in the Creator / Founder Tools.
 
 ## Promise
 
-stress-test a pitch until the story, market, and ask are impossible to ignore
+Pressure-test the pitch until the story can survive the room.
 
-## Built For
+PitchReady helps founders turn ambition into investor-ready clarity: wedge, market, moat, traction, objections, ask, and next proof milestone.
 
-founders, accelerators, consultants, and startup studios
+## Current v1
 
-## Product Modules
+- Bespoke product cockpit UI
+- Live product-specific intake
+- `POST /api/intelligence`
+- Product-specific scoring and action queue
+- Contributor mission lanes
+- Mobile-friendly layout
 
-- Narrative audit
-- Market wedge
-- Moat pressure test
-- Financial ask review
-- Investor question prep
+## Contributor Missions
 
-## Open Source Direction
-
-This repo is open to contributors because strong ideas move faster when serious builders can inspect, improve, and extend them. The goal is not secrecy. The goal is speed, quality, and contribution.
-
-## First Workflow
-
-1. Enter real context.
-2. Generate a useful first output.
-3. Review risk, confidence, or next action.
-4. Save the result into product memory in a future paid workspace.
+- Deck parser: Read slide text and score narrative gaps.
+- Investor objection simulator: Generate likely questions by investor type.
+- Benchmark library: Compare claims against category norms and public comps.
+- Data-room checklist: Turn readiness gaps into evidence tasks.
 
 ## Run Locally
 
 ```bash
 npm install
 npm run dev
+```
+
+## Build
+
+```bash
+npm run build
 ```
