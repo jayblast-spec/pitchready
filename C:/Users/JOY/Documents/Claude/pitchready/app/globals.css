@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090a0f;
+  --surface: #10121a;
+  --surface-2: #171b27;
+  --border: #20273d;
+  --foreground: #eaeeff;
+  --muted: #7b89c4;
+  --accent: #f59e0b;
+  --accent-2: #fbbf24;
+  --accent-soft: rgba(245,158,11,0.12);
+  --accent-glow: rgba(245,158,11,0.20);
+  --success: #34d399;
+  --warn: #fb923c;
+  --danger: #f87171;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-soft: var(--accent-soft);
+  --color-success: var(--success);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html { color-scheme: dark; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.gold-bg {
+  background:
+    radial-gradient(ellipse 80% 55% at 50% -15%, rgba(245,158,11,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 35% at 80% 70%, rgba(251,191,36,0.08) 0%, transparent 60%),
+    var(--background);
+}
+
+.circuit-grid {
+  background-image:
+    linear-gradient(rgba(245,158,11,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,158,11,0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
