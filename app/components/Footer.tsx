@@ -10,7 +10,7 @@ const ALL_TOOLS = [
   { name: "SafeLink", desc: "URL phishing scanner", url: "https://safelink-wheat.vercel.app", live: true },
   { name: "SubnetPilot", desc: "CIDR subnet calculator", url: "https://subnetpilot.vercel.app", live: true },
   { name: "ThreatPulse", desc: "CVE threat feed", url: "https://threatpulse-six.vercel.app", live: true },
-  { name: "ContractLens", desc: "Contract risk scanner", url: "https://contractlens-rho.vercel.app", live: true },
+  { name: "ContractLens", desc: "Contract risk scanner", url: null, live: false },
 ];
 
 const CURRENT = "PitchReady";
