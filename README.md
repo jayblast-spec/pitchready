@@ -1,38 +1,63 @@
-# PitchReady
+<div align="center">
 
-PitchReady is an ArkNet Digital product in the Creator / Founder Tools.
+# 🎯 PitchReady
 
-## Promise
+**YC-style brutal honesty for your startup — market sizing, ICP, moat analysis, and what you are missing.**
 
-Pressure-test the pitch until the story can survive the room.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-6366f1?style=for-the-badge)](https://pitchready.vercel.app)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-34d399?style=for-the-badge)](LICENSE)
 
-PitchReady helps founders turn ambition into investor-ready clarity: wedge, market, moat, traction, objections, ask, and next proof milestone.
+</div>
 
-## Current v1
+---
 
-- Bespoke product cockpit UI
-- Live product-specific intake
-- `POST /api/intelligence`
-- Product-specific scoring and action queue
-- Contributor mission lanes
-- Mobile-friendly layout
+## ✨ Features
 
-## Contributor Missions
+- 🎤 **AI pitch analyzer** — describe your startup and get partner-level critique in seconds
+- 📏 **Market sizing** — TAM / SAM / SOM estimates with reasoning and assumptions surfaced
+- 👥 **ICP definition** — exactly who your customer is, what they feel, and what makes them pay
+- 🏰 **Moat assessment** — what actually defends your position vs. what sounds good but doesn't
+- ⚠️ **Top risks surfaced** — the 3 most likely failure modes called out plainly
+- 🗺️ **Next steps** — specific, actionable milestones to validate before raising
+- ⚡ **Free and instant** — no scheduling, no agency fees, no fluff
 
-- Deck parser: Read slide text and score narrative gaps.
-- Investor objection simulator: Generate likely questions by investor type.
-- Benchmark library: Compare claims against category norms and public comps.
-- Data-room checklist: Turn readiness gaps into evidence tasks.
+---
 
-## Run Locally
+## 🚀 Quick Start
 
 ```bash
+git clone https://github.com/jayblast-spec/pitchready.git
+cd pitchready
 npm install
 npm run dev
 ```
 
-## Build
+Open [http://localhost:3000](http://localhost:3000)
 
-```bash
-npm run build
-```
+---
+
+## 🛠 Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| AI | Groq |
+| Styling | Tailwind CSS |
+| Deployment | Vercel |
+
+---
+
+## 📦 Deploy Your Own
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/jayblast-spec/pitchready)
+
+Required env vars: `GROQ_API_KEY`
+
+---
+
+## 📄 License
+
+MIT © [Joy Ogunleye](https://github.com/jayblast-spec) · Built with [ArkNet Forge](https://arknet-os.vercel.app)
