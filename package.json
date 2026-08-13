@@ -2,6 +2,10 @@
   "name": "pitchready",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
