@@ -37,9 +37,18 @@ PitchReady helps founders turn ambition into investor-ready clarity: narrative a
 
 ## How It Works
 
-- Next.js App Router with two API routes: `app/api/analyze/route.ts` and `app/api/intelligence/route.ts`
-- Both call Groq's `chat/completions` endpoint with `GROQ_API_KEY`, returning `intelligence_map`, `action_queue`, and `contributor_lanes` structures; a deterministic local fallback keeps the UI usable without a key
-- Single client-rendered page (`app/page.tsx`) built with Tailwind CSS 4 and Framer Motion, no database or auth layer
+- `app/api/analyze/route.ts` calls Groq's `chat/completions` endpoint with `GROQ_API_KEY` against a strict typed schema (`PitchAnalysis`), and falls back to a fixed, detailed demo analysis when no key is set.
+- Single client-rendered page (`app/page.tsx`) built with Tailwind CSS 4 and Framer Motion, no database or auth layer.
+
+## Engineering Notes
+
+**The real problem:** a "startup idea grader" that returns a paragraph is useless to skim — founders need the same structured shape every time (verdict, market size, ICP, moat, risks, next steps) so they can compare ideas apples-to-apples.
+
+**The approach:** `analyze/route.ts` defines `PitchAnalysis` as a strict TypeScript type up front and prompts Groq to fill exactly that shape — verdict, market-size estimate with reasoning, ICP, moat assessment, a severity-tagged risk list, and a numeric score — rather than parsing free text after the fact.
+
+**One real number:** the demo fallback (no API key) is a fully worked example, not a placeholder — a real ICP, four sized risks with mitigations, and a score of 72, so the product is honestly demoable without a key instead of showing an error.
+
+**Not handled yet:** `app/api/intelligence` is a separate, disconnected decorative endpoint (a string-length heuristic) — it does not call Groq and isn't part of the actual analysis pipeline, despite living next to it.
 
 ## Live
 
