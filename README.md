@@ -7,7 +7,6 @@
 PitchReady helps founders turn ambition into investor-ready clarity: narrative audit, market wedge, moat pressure test, and a concrete ask backed by the next proof milestone. A founder describes their startup and PitchReady's `/api/analyze` and `/api/intelligence` routes call Groq to return an investor-readiness score, an intelligence map, and a prioritized action queue.
 
 <p>
-  <a href="https://pitchready-two.vercel.app"><img alt="Live Demo" src="https://img.shields.io/badge/Live-Demo-1D4ED8?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://github.com/jayblast-spec/pitchready"><img alt="GitHub Repo" src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
@@ -52,7 +51,7 @@ PitchReady helps founders turn ambition into investor-ready clarity: narrative a
 
 ## Live
 
-https://pitchready-two.vercel.app
+*(demo temporarily offline)*
 
 ## Tech Stack
 
